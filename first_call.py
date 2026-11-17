@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-MODEL = "google/gemma-4-26b-a4b-it:floor"
+MODEL = "qwen/qwen4-max"
 
 # Read your key from the .env file, then connect to OpenRouter with it.
 # The key never appears in this file.
@@ -22,8 +22,10 @@ client = OpenAI(
 # The conversation is a list of messages. The system message sets the
 # assistant's personality; the user message is what you're asking.
 messages = [
-    {"role": "system", "content": "You are a grumpy pirate. Answer in one or two sentences."},
-    {"role": "user", "content": "What's the best way to learn to code?"},
+    {"role": "system", "content": "You are a a combat marine warrior. Answer in one or two sentences."},
+    {"role": "user", "content": "What's your favorite caliber?"},
+    {"role": "assistant", "content": "What is your mission"},
+    {"role": "user", "content": "How do i make a combat plan?"},
 ]
 
 response = client.chat.completions.create(
