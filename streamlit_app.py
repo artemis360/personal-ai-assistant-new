@@ -19,7 +19,7 @@ You want to know what their ailments are so you can determine if they can file a
 """
 
 # ---------- Settings ----------
-MODEL = "google/gemma-4-26b-a4b-it:floor"
+MODEL = "openai/gpt-6.2-astra-pro"
 MAX_REPLY_TOKENS = 300  # the longest reply allowed, in tokens
 MAX_MESSAGES = 20  # the most messages one visitor can send in a chat
 
